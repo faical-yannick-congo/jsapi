@@ -1,0 +1,8 @@
+{
+    "records": [
+        "course",
+        "grade",
+        "student",
+        "school"
+    ]
+}

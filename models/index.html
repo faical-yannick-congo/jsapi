@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JsApi Models</title>
+</head>
+<body>
+
+  <button type="button" onclick="getURL();">Get Models</button>
+  <script>
+    function getURL() {
+      const reader = new FileReader();
+      reader.addEventListener('load', (event) => {
+        var tempPage = event.target.result;
+        var w = window.open(''); 
+        w.document.write(tempPage);
+      });
+
+      reader.readAsDataURL("models.json");
+    }
+  </script>
+     
+</body>
+</html>
